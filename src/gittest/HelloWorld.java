@@ -3,9 +3,7 @@ package gittest;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
-		System.out.println("c0deWanted was here");
-
+		Method.helloworld();
 	}
 
 }
