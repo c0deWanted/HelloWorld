@@ -16,9 +16,7 @@ public class Method {
 				System.out.println("Hello World!");
 			} else {
 				System.out.println("I will say it anyway!");
-				System.out.println("****************");
 				System.out.println("* Hello World! *");
-				System.out.println("****************");
 			}
 			
 		}catch(IOException e) {
