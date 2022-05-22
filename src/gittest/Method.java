@@ -17,12 +17,20 @@ public class Method {
 			} else {
 				System.out.println("I will say it anyway!");
 				System.out.println("* Hello World! *");
-				System.out.println("Where is my cherry-pick? :(");
 			}
 			
 		}catch(IOException e) {
 			System.out.println("try again");
 			helloworld();
 		}		
+	}
+	
+	public static void tryagain() throws InterruptedException {
+		String[] hw= {"H","e","l","l","o"," ","W","o","r","l","d"};
+		for(int i=0;i<hw.length;i++) {
+			System.out.println(hw[i]);
+			Thread.sleep(500);
+		}
+		System.out.println("This Is The End");
 	}
 }
