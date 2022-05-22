@@ -17,6 +17,7 @@ public class Method {
 			} else {
 				System.out.println("I will say it anyway!");
 				System.out.println("* Hello World! *");
+				System.out.println("Where is my cherry-pick? :(");
 			}
 			
 		}catch(IOException e) {
