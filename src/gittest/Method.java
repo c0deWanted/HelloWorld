@@ -26,4 +26,12 @@ public class Method {
 			helloworld();
 		}		
 	}
+	
+	public static void tryagain() throws InterruptedException {
+		String[] hw= {"H","e","l","l","o"," ","W","o","r","l","d"};
+		for(int i=0;i<hw.length;i++) {
+			System.out.println(hw[i]);
+			Thread.sleep(500);
+		}
+	}
 }
