@@ -5,27 +5,35 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Method {
+	private final String hello="Hello World!";
+	private boolean decision=false;
 	
-	public static void helloworld() {
+	public Method() {
+		helloworld();
+	}
+	
+	private void helloworld() {
 		BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		try {
 			System.out.println("should i really say this?");
 			System.out.println("y/n");
-			String decis = br.readLine();
-			if (decis.contentEquals("y")) {
-				System.out.println("Hello World!");
+			String userInput = br.readLine();
+			if (userInput.equalsIgnoreCase("y")) 
+				decision=true;
+			if (decision==true) {
+				System.out.println(hello);
 			} else {
 				System.out.println("I will say it anyway!");
-				System.out.println("* Hello World! *");
+				tryagain();
 			}
 			
-		}catch(IOException e) {
+		}catch(IOException | InterruptedException e) {
 			System.out.println("try again");
 			helloworld();
 		}		
 	}
 	
-	public static void tryagain() throws InterruptedException {
+	private void tryagain() throws InterruptedException {
 		String[] hw= {"H","e","l","l","o"," ","W","o","r","l","d"};
 		for(int i=0;i<hw.length;i++) {
 			System.out.println(hw[i]);

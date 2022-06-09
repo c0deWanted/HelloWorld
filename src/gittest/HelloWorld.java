@@ -2,9 +2,8 @@ package gittest;
 
 public class HelloWorld {
 
-	public static void main(String[] args) throws InterruptedException {
-		Method.helloworld();
-		Method.tryagain();
+	public static void main(String[] args) {
+		new Method();
 	}
 
 }
